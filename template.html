@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="Mountain Bean Café—Fresh-roasted coffee from the Colorado Rockies." />
+  <title>Mountain Bean Café</title>
+
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="preload" href="../fonts/mountainbean.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Google Analytics: replace G-XXXXXXX with your GA ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <img src="../images/logo.png" alt="Mountain Bean Café logo" width="36" height="36">
+        <span>Mountain Bean Café</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu" class="menu">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Page-specific content goes here -->
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Mountain Bean Café. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle (no external libs)
+    const btn = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>
 
