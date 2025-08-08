@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Our origin story: solving the problem of forgettable vacation coffee with unforgettable, Colorado-roasted beans." />
+  <title>Mountain Bean Café — About</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="preload" href="../fonts/mountainbean.woff2" as="font" type="font/woff2" crossorigin>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html"><img src="../images/logo.png" alt="Mountain Bean Café logo" width="36" height="36"><span>Mountain Bean Café</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu" class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Our Origin Story</h1>
+    <p><strong>Problem →</strong> Visitors came to our mountain town for the trails and views, but left with only a souvenir mug and no way to relive the taste of the trip. Great memories—forgettable coffee.</p>
+    <p><strong>Promise →</strong> We roast small-batch beans at altitude and ship them fresh to your door, so every cup brings you back to the Rockies. Clean ingredients, transparent sourcing, and blends built for adventure.</p>
+    <figure>
+      <img src="../images/staff.jpg" alt="Barista hand-pouring coffee behind the Mountain Bean counter" width="720">
+      <figcaption>Crafted daily by our roasting team in Colorado.</figcaption>
+    </figure>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Mountain Bean Café. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const btn=document.querySelector('.nav-toggle');const menu=document.getElementById('menu');
+    if(btn&&menu){btn.addEventListener('click',()=>{const e=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!e));menu.classList.toggle('open');});}
+  </script>
+</body>
+</html>
 
