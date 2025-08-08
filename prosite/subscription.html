@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Choose the right coffee subscription plan—freshly roasted and shipped monthly." />
+  <title>Mountain Bean Café — Subscription</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="preload" href="../fonts/mountainbean.woff2" as="font" type="font/woff2" crossorigin>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html"><img src="../images/logo.png" alt="Mountain Bean Café logo" width="36" height="36"><span>Mountain Bean Café</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu" class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="subscription.html" aria-current="page">Subscription</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Choose Your Brew</h1>
+    <p>Whether you're a weekend sipper or a daily drinker, there’s a plan built for your routine. All subscriptions are roasted-to-order and shipped fast from Colorado.</p>
+
+    <div class="table-wrap">
+      <table aria-describedby="planhelp">
+        <thead>
+          <tr><th scope="col">Plan</th><th scope="col">Price</th><th scope="col">Features</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Trail Taster</td><td>$9/mo</td><td>One 8 oz bag / rotating blend</td></tr>
+          <tr><td>Summit Sipper</td><td>$16/mo</td><td>One 12 oz bag / choose your roast</td></tr>
+          <tr><td>Explorer’s Bundle</td><td>$29/mo</td><td>Two 12 oz bags / seasonal releases</td></tr>
+          <tr><td>Adventure Crew</td><td>$49/mo</td><td>Four 12 oz bags / free shipping</td></tr>
+        </tbody>
+      </table>
+      <p id="planhelp" class="muted">Pause, skip, or switch roasts anytime.</p>
+    </div>
+
+    <p><a class="btn-primary" href="mailto:subscribe@mountainbean.com">Subscribe Now</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Mountain Bean Café. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const btn=document.querySelector('.nav-toggle');const menu=document.getElementById('menu');
+    if(btn&&menu){btn.addEventListener('click',()=>{const e=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!e));menu.classList.toggle('open');});}
+  </script>
+</body>
+</html>
 
