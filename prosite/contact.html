@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Find our café, check hours, and get in touch." />
+  <title>Mountain Bean Café — Contact</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="preload" href="../fonts/mountainbean.woff2" as="font" type="font/woff2" crossorigin>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html"><img src="../images/logo.png" alt="Mountain Bean Café logo" width="36" height="36"><span>Mountain Bean Café</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu" class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Visit Us</h1>
+    <p><strong>Address:</strong> 123 Summit Trail, Estes Park, CO 80517</p>
+    <p><strong>Hours:</strong> Mon–Fri 7:00–16:00 • Sat–Sun 8:00–17:00</p>
+
+    <div class="map-wrap">
+      <iframe
+        title="Mountain Bean Café location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.7165825292313!2d-105.51952738462808!3d40.377206879369434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8769c437ef1273e5%3A0xb3dd3790b7cfe9bb!2sEstes%20Park%20Coffee%20Shop!5e0!3m2!1sen!2sus!4v1593120626544!5m2!1sen!2sus"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <p><a class="btn-primary" href="mailto:info@mountainbean.com">Email Us</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Mountain Bean Café. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const btn=document.querySelector('.nav-toggle');const menu=document.getElementById('menu');
+    if(btn&&menu){btn.addEventListener('click',()=>{const e=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!e));menu.classList.toggle('open');});}
+  </script>
+</body>
+</html>
 
